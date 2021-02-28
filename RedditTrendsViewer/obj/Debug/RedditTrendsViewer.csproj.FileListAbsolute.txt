@@ -1,0 +1,10 @@
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\bin\Debug\RedditTrendsViewer.exe.config
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\bin\Debug\RedditTrendsViewer.exe
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\bin\Debug\RedditTrendsViewer.pdb
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csprojAssemblyReference.cache
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.Form1.resources
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.Properties.Resources.resources
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csproj.GenerateResource.cache
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csproj.CoreCompileInputs.cache
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.exe
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.pdb
