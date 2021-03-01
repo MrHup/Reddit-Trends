@@ -8,3 +8,7 @@ C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\Re
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csproj.CoreCompileInputs.cache
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.exe
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.pdb
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.UserControls.DefaultHomePage.resources
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.UserControls.TrendingPage.resources
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csproj.CopyComplete

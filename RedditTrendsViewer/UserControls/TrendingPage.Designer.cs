@@ -1,7 +1,7 @@
 ﻿
 namespace RedditTrendsViewer.UserControls
 {
-    partial class DefaultHomePage
+    partial class TrendingPage
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,18 +35,19 @@ namespace RedditTrendsViewer.UserControls
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 24);
+            this.label1.Location = new System.Drawing.Point(28, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Home page";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Trending page";
             // 
-            // DefaultHomePage
+            // TrendingPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.label1);
-            this.Name = "DefaultHomePage";
-            this.Size = new System.Drawing.Size(816, 368);
+            this.Name = "TrendingPage";
+            this.Size = new System.Drawing.Size(782, 353);
             this.ResumeLayout(false);
             this.PerformLayout();
 
