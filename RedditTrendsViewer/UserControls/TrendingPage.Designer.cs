@@ -30,6 +30,7 @@ namespace RedditTrendsViewer.UserControls
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.getTestButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -41,10 +42,24 @@ namespace RedditTrendsViewer.UserControls
             this.label1.TabIndex = 1;
             this.label1.Text = "Trending page";
             // 
+            // getTestButton
+            // 
+            this.getTestButton.FlatAppearance.BorderSize = 0;
+            this.getTestButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.getTestButton.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getTestButton.Location = new System.Drawing.Point(31, 76);
+            this.getTestButton.Name = "getTestButton";
+            this.getTestButton.Size = new System.Drawing.Size(170, 39);
+            this.getTestButton.TabIndex = 2;
+            this.getTestButton.Text = "GET";
+            this.getTestButton.UseVisualStyleBackColor = true;
+            this.getTestButton.Click += new System.EventHandler(this.getTestButton_Click);
+            // 
             // TrendingPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.getTestButton);
             this.Controls.Add(this.label1);
             this.Name = "TrendingPage";
             this.Size = new System.Drawing.Size(782, 353);
@@ -56,5 +71,6 @@ namespace RedditTrendsViewer.UserControls
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button getTestButton;
     }
 }

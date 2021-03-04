@@ -24,14 +24,23 @@ namespace RedditTrendsViewer
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
+            HomeButton.Enabled = false;
+            TrendingButton.Enabled = true;
+
             bunifuTransition2.HideSync(trendingPage1);
             bunifuTransition1.ShowSync(defaultHomePage1);
+
+            
         }
 
         private void TrendingButton_Click(object sender, EventArgs e)
         {
+            TrendingButton.Enabled = false;
+            HomeButton.Enabled = true;
+
             bunifuTransition2.HideSync(defaultHomePage1);
             bunifuTransition1.ShowSync(trendingPage1);
+            
         }
     }
 }
