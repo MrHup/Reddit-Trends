@@ -60,6 +60,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Keyword.cs" />
+    <Compile Include="Objects\SessionObj.cs" />
     <Compile Include="Objects\Listing.cs" />
     <Compile Include="Objects\ListingChild.cs" />
     <Compile Include="Objects\ListingData.cs" />
@@ -80,6 +82,12 @@
     <Compile Include="UserControls\TrendingPage.Designer.cs">
       <DependentUpon>TrendingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\SettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +107,9 @@
     <EmbeddedResource Include="UserControls\TrendingPage.resx">
       <DependentUpon>TrendingPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SettingsPage.resx">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -113,7 +124,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Assets\stocks1.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Assets\analytics_b.png" />
   </ItemGroup>
@@ -134,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

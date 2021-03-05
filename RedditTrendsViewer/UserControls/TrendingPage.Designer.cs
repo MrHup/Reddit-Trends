@@ -36,9 +36,11 @@ namespace RedditTrendsViewer.UserControls
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(28, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(145, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Trending page";
             // 
@@ -47,6 +49,7 @@ namespace RedditTrendsViewer.UserControls
             this.getTestButton.FlatAppearance.BorderSize = 0;
             this.getTestButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.getTestButton.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getTestButton.ForeColor = System.Drawing.Color.White;
             this.getTestButton.Location = new System.Drawing.Point(31, 76);
             this.getTestButton.Name = "getTestButton";
             this.getTestButton.Size = new System.Drawing.Size(170, 39);
@@ -58,7 +61,9 @@ namespace RedditTrendsViewer.UserControls
             // TrendingPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::RedditTrendsViewer.Properties.Resources.bg1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.getTestButton);
             this.Controls.Add(this.label1);
             this.Name = "TrendingPage";
