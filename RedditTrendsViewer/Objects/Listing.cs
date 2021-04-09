@@ -11,5 +11,7 @@ namespace RedditTrendsViewer.Objects
         public string kind { get; set; }
         public ListingData data { get; set; }
 
+        public Listing() {}
+
     }
 }

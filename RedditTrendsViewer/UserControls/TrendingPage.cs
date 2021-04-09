@@ -24,18 +24,30 @@ namespace RedditTrendsViewer.UserControls
 
         private void getTestButton_Click(object sender, EventArgs e)
         {
-            string url = "https://www.reddit.com/r/wallstreetbets/top.json?limit=3";
-            string response = RequestHandler.Get(url);
 
-            Console.WriteLine(response);
+            if (subreddit_textBox.Text != "")
+                Session.RedditTop.updateSubredditName(subreddit_textBox.Text);
+            Session.RedditTop.updateTopRedditPosts(10);
 
-            var responseObject = JsonConvert.DeserializeObject<Listing>(response);
+            listView1.Columns.Clear();
 
-            foreach (var child in responseObject.data.children)
+            listView1.View = View.Details;
+            listView1.Columns.Add("Subreddit");
+            listView1.Columns.Add("Author");
+            listView1.Columns.Add("Title");
+
+            listView1.Items.Clear();
+
+            Listing elements = Session.RedditTop.getTopRedditPosts();
+            if (elements == null) return;
+
+            foreach (var child in elements.data.children)
             {
                 Console.WriteLine(child.data.title);
 
-    
+                var item1 = new ListViewItem(new[] { child.data.subreddit, child.data.author, child.data.title });
+               
+                listView1.Items.Add(item1);
             }
 
         }

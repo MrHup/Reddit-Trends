@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -47,10 +48,12 @@ namespace RedditTrendsViewer.UserControls
 
         }
 
-        private void UpdateButton_Click(object sender, EventArgs e)
+        private async void UpdateButton_Click(object sender, EventArgs e)
         {
             string input = Helpers.TrimAllWithInplaceCharArray(richTextBox1.Text);
             updateSessionObjects(input);
+
+            // await File.WriteAllTextAsync("WriteText.txt", input);
         }
     }
 }
