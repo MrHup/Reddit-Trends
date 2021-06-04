@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,24 +72,6 @@
     <Compile Include="Requests\Helpers.cs" />
     <Compile Include="Requests\RequestHandler.cs" />
     <Compile Include="Session\RedditTop.cs" />
-    <Compile Include="UserControls\DefaultHomePage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\DefaultHomePage.Designer.cs">
-      <DependentUpon>DefaultHomePage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\TrendingPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\TrendingPage.Designer.cs">
-      <DependentUpon>TrendingPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SettingsPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\SettingsPage.Designer.cs">
-      <DependentUpon>SettingsPage.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,15 +85,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\DefaultHomePage.resx">
-      <DependentUpon>DefaultHomePage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\TrendingPage.resx">
-      <DependentUpon>TrendingPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SettingsPage.resx">
-      <DependentUpon>SettingsPage.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
