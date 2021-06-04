@@ -41,7 +41,7 @@ namespace RedditTrendsViewer
             else
             {
                 string initialDefaultContent = "NOK\nGME\nMSFT\nAMC";
-
+     
                 File.WriteAllText(@"trendsKeywords.txt", initialDefaultContent);
             }
                 
@@ -59,10 +59,7 @@ namespace RedditTrendsViewer
         }
 
   
-        private void HomeButton_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void HomeButton_Click(object sender, EventArgs e) {}
 
         void checkIfStringContainsKeys(string str)
         {
@@ -91,7 +88,9 @@ namespace RedditTrendsViewer
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
-
+            Form2 f2 = new Form2(this);
+            this.Hide();
+            f2.ShowDialog();
         }
 
         void updateChart()
@@ -101,10 +100,10 @@ namespace RedditTrendsViewer
       
             foreach (var item in keyWordsList)
             {
-
+                
                 chart1.Series.Add(item.Key);
                 chart1.Series[i].LegendText = item.Key;
-                chart1.Series[i].Points.AddXY(item.Key, item.Value);
+                chart1.Series[i].Points.AddXY("Keys", item.Value);
                 chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
                 chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
                 chart1.ChartAreas[0].AxisY.MinorGrid.Enabled = false;
@@ -112,6 +111,7 @@ namespace RedditTrendsViewer
                 // chart1.Series[i]["PointWidth"] = "0.75";
                 chart1.Series[i].IsValueShownAsLabel = true;
                 chart1.Series[i].ChartType = SeriesChartType.Bar;
+
                 i++;
             }
 
@@ -119,12 +119,19 @@ namespace RedditTrendsViewer
 
         private async void buildGraph()
         {
+            readWordsOfInterest();
+
             titleMessage.Text = "Current trends for r/" + subreddit_textBox.Text;
+            topTitle.Text = "Top " +Session.RedditTop.globalNrPosts.ToString() +" posts from r/" + subreddit_textBox.Text;
             if (subreddit_textBox.Text != "")
                 Session.RedditTop.updateSubredditName(subreddit_textBox.Text);
             else
+            {
                 titleMessage.Text = "Current trends for r/wallstreetbets";
-            Session.RedditTop.updateTopRedditPosts(10);
+                topTitle.Text = "Top " + Session.RedditTop.globalNrPosts.ToString() + " posts from r/wallstreetbets";
+            }
+                
+            Session.RedditTop.updateTopRedditPosts(Session.RedditTop.globalNrPosts);
 
             listView1.Columns.Clear();
 
@@ -164,8 +171,35 @@ namespace RedditTrendsViewer
 
         private async void button1_Click_1(object sender, EventArgs e)
         {
-
             buildGraph();
+        }
+
+        private void AnalyticsButton_Click(object sender, EventArgs e)
+        {
+            Form3 f2 = new Form3(this);
+            this.Hide();
+            f2.ShowDialog();
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

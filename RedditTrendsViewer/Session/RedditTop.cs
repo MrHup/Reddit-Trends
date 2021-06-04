@@ -11,6 +11,7 @@ namespace RedditTrendsViewer.Session
     // save top N reddit posts to be processed and displayed throughout the app
     class RedditTop
     {
+        public static int globalNrPosts = 15;
         private static Listing topRedditPosts = null;
         private static string current_subreddit = "wallstreetbets";
 

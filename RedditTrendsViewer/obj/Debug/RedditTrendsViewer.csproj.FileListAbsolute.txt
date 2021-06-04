@@ -11,3 +11,5 @@ C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\Re
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.exe
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.pdb
 C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.csprojAssemblyReference.cache
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.Form2.resources
+C:\Users\Flavius\source\repos\RedditTrendsViewer\RedditTrendsViewer\obj\Debug\RedditTrendsViewer.Form3.resources
